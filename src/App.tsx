@@ -1,29 +1,20 @@
 import "./styles/global.css";
 import "./styles/theme.css";
 
+import { PlayCircleIcon } from "lucide-react";
+
 import { Container } from "./components/Container";
-import { Logo } from "./components/Logo";
-import { Menu } from "./components/Menu";
 import { Countdown } from "./components/CountDown";
-import { DefaultInput } from "./components/DefaultInput";
 import { Cycles } from "./components/Cycles";
 import { DefaultButton } from "./components/DefaultButton";
-import { PlayCircleIcon } from "lucide-react";
+import { DefaultInput } from "./components/DefaultInput";
 import { Footer } from "./components/Footer";
-import { Heading } from "./components/Heading";
-import { useState } from "react";
+import { Logo } from "./components/Logo";
+import { Menu } from "./components/Menu";
 
 function App() {
-  const [numero, setNumero] = useState(0);
-
-  const handleClick = () => {
-    setNumero((prev) => prev + 1);
-  };
-
   return (
     <>
-      <Heading>Número: {numero}</Heading>
-      <button onClick={handleClick}>Aumenta</button>
       <Container>
         <Logo />
       </Container>
